@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/abhinav-gif/DevChallenges/edit/main/404-not-found/">
+    <a href="https://github.com/abhinav-gif/DevChallenges/edit/main/404-page-error/">
       Solution
     </a>
     <span> | </span>
