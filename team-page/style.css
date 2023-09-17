@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-right: 25%;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  width: fit-content;
+}
+
+.one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.one h3 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+.upper-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.upper-content h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.upper-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 75%;
+}
+
+.two,
+.three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  display: flex;
+  align-items: flex-start;
+}
+.card h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card span {
+  text-transform: uppercase;
+
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 400;
+  width: max-content;
+  transform: translate(-30%) rotate(90deg);
+  margin-top: 3rem;
+}
+.card img {
+  max-width: 250px;
+  max-height: 350px;
+}
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #bdbdbd;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.card:nth-child(2),
+.card:nth-child(5) {
+  margin-top: 5rem;
+}
+@media (max-width: 1100px) {
+  .upper-content p {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 750px) {
+  .one {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card:nth-child(6),
+  .card:nth-child(4) {
+    margin-top: 5rem;
+  }
+  .card:nth-child(5) {
+    margin-top: 0;
+  }
+  .wrapper {
+    margin: 5%;
+  }
+  .upper-content p {
+    width: 70%;
+  }
+}

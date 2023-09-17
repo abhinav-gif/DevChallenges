@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@400;700&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+.page {
+  padding: 2.5% 5%;
+}
+h4 {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+.container {
+  width: 95vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  gap: 7%;
+}
+
+.content {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+}
+.content img {
+  height: 52%;
+  width: 40%;
+}
+.column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+.column h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 64px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+}
+
+.column p {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+  width: 60%;
+}
+
+.column button {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  width: 30%;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #bdbdbd;
+  position: absolute;
+  bottom: 1.3rem;
+  left: 50%;
+  translate: -50%;
+}
+
+.userName {
+  font-weight: 700;
+}
+
+/* mobile CSS */
+
+@media (max-width: 1300px) {
+  .column h1 {
+    font-size: 48px;
+  }
+  .column p {
+    font-size: 18px;
+  }
+  .column button {
+    padding: 0.75rem;
+  }
+}
+@media (max-width: 1000px) {
+  .column p {
+    width: 80%;
+  }
+}
+/* layout change for mobile */
+@media (max-width: 850px) {
+  .page {
+    padding: 1.5rem;
+  }
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .container,
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .content img {
+    width: 90%;
+  }
+  .column {
+    width: 100%;
+  }
+  .column p {
+    width: 100%;
+  }
+  .column button {
+    width: 60%;
+    padding: 1rem;
+  }
+  footer {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+}
