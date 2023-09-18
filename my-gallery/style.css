@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 5% 15%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.top img {
+  max-width: 186px;
+  border-radius: 10%;
+}
+.top h4 {
+  font-size: 24px;
+  color: #4e5150;
+}
+.top p {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.card {
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  width: 6rem;
+  padding: 1rem 0;
+}
+.title,
+.desc {
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.title {
+  font-size: 18px;
+  color: #4e5150;
+}
+.desc {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  grid-template-areas:
+    "a b b"
+    "c c d"
+    "e f d";
+}
+.one {
+  grid-area: a;
+}
+.two {
+  grid-area: b;
+}
+.three {
+  grid-area: c;
+}
+.four {
+  grid-area: d;
+}
+.five {
+  grid-area: f;
+}
+.six {
+  grid-area: e;
+}
+.wrapper img {
+  width: 100%;
+  box-shadow: 0px 4px 6px 0px #00000026;
+  border-radius: 18px;
+  height: 100%;
+}
+
+footer {
+  font-family: Montserrat;
+  color: #b9bdcf;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer a {
+  font-weight: 500;
+}
+footer a:visited {
+  color: #b9bdcf;
+}
+
+@media (max-width: 650px) {
+  body {
+    margin: 5%;
+  }
+  .top img {
+    max-width: 25%;
+    border-radius: 10%;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    gap: 3rem;
+    max-height: 95vh;
+  }
+
+  .wrapper {
+    gap: 1rem;
+  }
+  .bottom {
+    gap: 1rem;
+  }
+  .card {
+    width: 25%;
+    min-width: fit-content;
+    padding: 0.6rem 0;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+}
