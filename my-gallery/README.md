@@ -26,7 +26,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/abhinav-gif/DevChallenges/tree/main/my-gallery)
+![screenshot](https://github.com/abhinav-gif/DevChallenges/blob/main/my-gallery/Web%20capture_18-9-2023_144322_devchallenges-responsive-4.netlify.app.jpeg)
 
 ## Features
 
